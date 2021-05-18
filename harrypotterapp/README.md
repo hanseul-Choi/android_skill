@@ -20,31 +20,35 @@ apply plugin: 'kotlin-kapt' , annotation을 제공하기위한 plugin + 뷰 바�
 
 
 ### dependencies
-implementation "androidx.cardview:cardview:${versions.card}", 카드 뷰 제공 <br>
-implementation "androidx.recyclerview:recyclerview:${versions.recyclerView}", 리사이클러뷰 제공 <br>
-implementation "androidx.lifecycle:lifecycle-livedata-ktx:${versions.lifecycle}", livedata 제공 <br>
-implementation "androidx.lifecycle:lifecycle-extensions:${versions.lifecycle}", 전체적인 aac를 제공 <br>
-* lifecycle-extensions는 lifecycle 2.3.0버전 이후부터 deprecated되었다. 따라서, 특정 aac 부분을 직접 implementation하여 사용해야 한다.
-
-implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:${versions.lifecycle}", viewmodel 제공 <br>
-kapt "androidx.lifecycle:lifecycle-compiler:${versions.archLifecycle}" , annotaion을 자바 및 코틀린을 이용하기 위해서 사용 <br>
-implementation "com.squareup.retrofit2:retrofit:${versions.retrofit}", retrofit 제공 <br>
-implementation "com.squareup.retrofit2:converter-gson:${versions.retrofit}", json변환을 위한 retrofit library <br>
-implementation "com.squareup.okhttp3:okhttp:${versions.okhttp}", okhttp이용 <br>
-implementation "com.squareup.okhttp3:okhttp-urlconnection:${versions.okhttp}", cookie나 인증 이용 <br>
-implementation "com.squareup.okhttp3:logging-interceptor:${versions.okhttp}", network가 연결되는 상황 및 상태를 확인할 수 있음(패킷 캡쳐) <br>
-implementation "com.github.bumptech.glide:glide:${versions.glide}", image 띄우는 glide 이용 <br>
-kapt "com.github.bumptech.glide:compiler:${versions.glide}", image caching기능 이용 <br>
-implementation "com.yarolegovich:discrete-scrollview:${versions.discreteScrollview}", 분리 view 이용 <br>
-implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:${versions.coroutines}", coroutine 이용 <br>
-implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:${versions.coroutines}", coroutine 이용 <br>
-implementation "org.koin:koin-android:${versions.koin}", koin 이용 <br>
-implementation "org.koin:koin-android-viewmodel:${versions.koin}", koin 이용 <br>
-implementation "com.airbnb.android:lottie:${versions.lottie}", 동적 이미지인 lottie 이용 <br>
-implementation "com.afollestad.material-dialogs:core:${versions.dialog}", dialog 이용 
 <br>
-#### kapt
-kapt란 자바 파일의 annotation 뿐만아니라 kotlin의 annotation을 포함하기 위해 사용되는 것으로, 보통 데이터 바인딩 시 bindingAdapter annotation을 이용하기 위해 사용된다.
+| dependencies                                                                             | 기능                                                        |
+|------------------------------------------------------------------------------------------|-------------------------------------------------------------|
+| implementation "androidx.cardview:cardview:${versions.card}"                             | 카드 뷰 제공                                                |
+| implementation "androidx.recyclerview:recyclerview:${versions.recyclerView}"             | 리사이클러뷰 제공                                           |
+| implementation "androidx.lifecycle:lifecycle-livedata-ktx:${versions.lifecycle}"         | livedata 제공                                               |
+| implementation "androidx.lifecycle:lifecycle-extensions:${versions.lifecycle}"           | 전체적인 aac를 제공                                         |
+| implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:${versions.lifecycle}"        | viewmodel 제공                                              |
+| kapt "androidx.lifecycle:lifecycle-compiler:${versions.archLifecycle}"                   | annotaion을 자바 및 코틀린을 이용하기 위해서 사용           |
+| implementation "com.squareup.retrofit2:retrofit:${versions.retrofit}"                    | retrofit 제공                                               |
+| implementation "com.squareup.retrofit2:converter-gson:${versions.retrofit}"              | json변환을 위한 retrofit library                            |
+| implementation "com.squareup.okhttp3:okhttp:${versions.okhttp}"                          | okhttp 이용                                                 |
+| implementation "com.squareup.okhttp3:okhttp-urlconnection:${versions.okhttp}"            | cookie나 인증 이용                                          |
+| implementation "com.squareup.okhttp3:logging-interceptor:${versions.okhttp}"             | network가 연결되는 상황 및 상태를 확인할 수 있음(패킷 캡쳐) |
+| implementation "com.github.bumptech.glide:glide:${versions.glide}"                       | image 띄우는 glide 이용                                     |
+| kapt "com.github.bumptech.glide:compiler:${versions.glide}"                              | image caching기능 이용                                      |
+| implementation "com.yarolegovich:discrete-scrollview:${versions.discreteScrollview}"     | 분리 view 이용                                              |
+| implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:${versions.coroutines}"    | coroutine 이용                                              |
+| implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:${versions.coroutines}" | coroutine 이용                                              |
+| implementation "org.koin:koin-android:${versions.koin}"                                  | koin 이용                                                   |
+| implementation "org.koin:koin-android-viewmodel:${versions.koin}"                        | koin 이용                                                   |
+| implementation "com.airbnb.android:lottie:${versions.lottie}"                            | 동적 이미지인 lottie 이용                                   |
+| implementation "com.afollestad.material-dialogs:core:${versions.dialog}"                 | dialog 이용                                                 |
+
+<br>
+
+* lifecycle-extensions는 lifecycle 2.3.0버전 이후부터 deprecated되었다. 따라서, 특정 aac 부분을 직접 implementation하여 사용해야 한다.
+<br>
+* kapt란 자바 파일의 annotation 뿐만아니라 kotlin의 annotation을 포함하기 위해 사용되는 것으로, 보통 데이터 바인딩 시 bindingAdapter annotation을 이용하기 위해 사용된다.
 
 <br>
 
