@@ -63,3 +63,11 @@ apply plugin: 'kotlin-kapt' , annotation을 제공하기위한 plugin + 뷰 바�
 4. extension
 5. model
 6. ui
+
+<br>
+
+### kotlin keyword
+- generic : 타입을 추론하는 형식 , (보통 T 문자를 이용) ArrayList처럼 추론이 가능한 타입이 다양하게 들어갈 수 있다. <br>
+- refied : generic보다 구체적인 generic이며, 일반적인 generic의 경우 타입에 직접 접근시 오류가 발생할 수 있다. 그렇지만 refied는 타입에 직접 접근이 가능하다. 또한 inline 함수에서만 사용이 가능하다. <br>
+- inline : 호출부에서 컴파일할 때, 코드를 그대로 복사하며 실행하는 특성이 있음. (타고타고 들어가는 것이 아니기 때문에 성능이 좋아짐)
+- by : 상속하지 않고 기존 기능을 이용하는 방식. 위임.
