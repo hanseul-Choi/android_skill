@@ -13,8 +13,9 @@
 ## 라이브러리
 
 ### 플러그인
-apply plugin: 'kotlin-android-extensions' , findviewbyid를 사용하지 않고 view binding을 이용하기 위한 플러그인 + 직렬화 제공(parcelize) <br>
-* kotlin 1.4.20 버전 이후부터는 migration되었기 때문에, 뷰 바인딩은 kotlin-kapt 플러그인으로 진행하며 직렬화는 kotlin-parcelize Plugin으로 변경한다. <br>
+apply plugin: 'kotlin-android-extensions' , findviewbyid를 사용하지 않고 view binding을 이용하기 위한 플러그인 + 직렬화 제공(parcelize) 
+* kotlin 1.4.20 버전 이후부터는 migration되었기 때문에, 뷰 바인딩은 kotlin-kapt 플러그인으로 진행하며 직렬화는 kotlin-parcelize Plugin으로 변경한다. 
+
 apply plugin: 'kotlin-kapt' , annotation을 제공하기위한 plugin + 뷰 바인딩 제공 <br>
 
 
@@ -23,7 +24,8 @@ implementation "androidx.cardview:cardview:${versions.card}", 카드 뷰 제공 
 implementation "androidx.recyclerview:recyclerview:${versions.recyclerView}", 리사이클러뷰 제공 <br>
 implementation "androidx.lifecycle:lifecycle-livedata-ktx:${versions.lifecycle}", livedata 제공 <br>
 implementation "androidx.lifecycle:lifecycle-extensions:${versions.lifecycle}", 전체적인 aac를 제공 <br>
-* lifecycle-extensions는 lifecycle 2.3.0버전 이후부터 deprecated되었다. 따라서, 특정 aac 부분을 직접 implementation하여 사용해야 한다. <br>
+* lifecycle-extensions는 lifecycle 2.3.0버전 이후부터 deprecated되었다. 따라서, 특정 aac 부분을 직접 implementation하여 사용해야 한다.
+
 implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:${versions.lifecycle}", viewmodel 제공 <br>
 kapt "androidx.lifecycle:lifecycle-compiler:${versions.archLifecycle}" , annotaion을 자바 및 코틀린을 이용하기 위해서 사용 <br>
 implementation "com.squareup.retrofit2:retrofit:${versions.retrofit}", retrofit 제공 <br>
