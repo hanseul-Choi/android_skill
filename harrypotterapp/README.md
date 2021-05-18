@@ -21,6 +21,7 @@ apply plugin: 'kotlin-kapt' , annotation을 제공하기위한 plugin + 뷰 바�
 
 ### dependencies
 <br>
+
 | dependencies                                                                             | 기능                                                        |
 |------------------------------------------------------------------------------------------|-------------------------------------------------------------|
 | implementation "androidx.cardview:cardview:${versions.card}"                             | 카드 뷰 제공                                                |
